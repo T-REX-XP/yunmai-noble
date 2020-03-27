@@ -1,5 +1,5 @@
-
-FROM arm32v6/node:8-alpine
+FROM node:6-alpine
+RUN apk add --update alpine-sdk eudev-dev linux-headers bluez python tini
 RUN apk add --update alpine-sdk eudev-dev linux-headers python tini
 RUN apk add --no-cache \
         readline \
